@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ifc_bh</name>
+    </assembly>
+    <members>
+        <member name="T:ifc.ifc_bh">
+            <summary >
+            Provide access to IFC-BH02
+            </summary >
+        </member>
+        <member name="F:ifc.ifc_bh.bh_1_encon">
+            <summary >
+            To enable stand alone encoding process for Encoder 1.
+            </summary >
+        </member>
+        <member name="F:ifc.ifc_bh.bh_2_encon">
+            <summary >
+            To enable stand alone encoding process for Encoder 2.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_bh class using the specified ifc.ifc_ci and 
+            address for IFC-BH02.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-BH02, in range of 0 to 63. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_bh.#ctor(ifc.ifc_ci,System.Int32)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_bh class using the specified ifc.ifc_ci and 
+            address for IFC-BH02.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-BH02, in range of 0 to 63. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_1_stop">
+            <summary >
+            To stop Motor 1.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_1_brake">
+            <summary >
+            To brake Motor 1.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_1_cw">
+            <summary >
+            To change the Motor 1 direction to clockwise.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_1_ccw">
+            <summary >
+            To change the Motor 1 direction to counter-clockwise.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_1_speed(System.Byte)">
+            <summary >
+            To change the speed of Motor 1.
+            </summary >
+            <param name="pwm" > Speed value of Motor 1 in range of 0 to 255. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_1_speed(System.Int32)">
+            <summary >
+            To change the speed of Motor 1.
+            </summary >
+            <param name="pwm" > Speed value of Motor 1 in range of 0 to 255. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_1_enclr">
+            <summary >
+            To clear Encoder 1 value.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_2_stop">
+            <summary >
+            To stop Motor 2.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_2_brake">
+            <summary >
+            To brake Motor 2.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_2_cw">
+            <summary >
+            To change the Motor 2 direction to clockwise.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_2_ccw">
+            <summary >
+            To change the Motor 2 direction to counter-clockwise.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_2_speed(System.Byte)">
+            <summary >
+            To change the speed of Motor 2.
+            </summary >
+            <param name="pwm" > Speed value of Motor 2 in range of 0 to 255. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_2_speed(System.Int32)">
+            <summary >
+            To change the speed of Motor 2.
+            </summary >
+            <param name="pwm" > Speed value of Motor 2 in range of 0 to 255. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_2_enclr">
+            <summary >
+            To clear Encoder 2 value.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh.bh_1_enval">
+            <summary >
+            To read Encoder 1 value.
+            </summary >
+            <returns > Encoder 1 value in 16-bit. (int)</returns>
+        </member>
+        <member name="M:ifc.ifc_bh.bh_1_runstat">
+            <summary >
+            To read Motor 1 run status.
+            </summary >
+            <returns > Return false if Motor 1 is stopped or braked. (bool)</returns>
+        </member>
+        <member name="M:ifc.ifc_bh.bh_1_enstat">
+            <summary >
+            To read Encoder 1 stand alone encoding status.
+            </summary >
+            <returns > Return true if Encoder 1 is in progress. (bool)</returns>
+        </member>
+        <member name="M:ifc.ifc_bh.bh_1_spval">
+            <summary >
+            To read Motor 1 speed value.
+            </summary >
+            <returns > Motor 1 speed value in 8-bit. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_bh.bh_2_enval">
+            <summary >
+            To read Encoder 2 value.
+            </summary >
+            <returns > Encoder 2 value in 16-bit. (int)</returns>
+        </member>
+        <member name="M:ifc.ifc_bh.bh_2_runstat">
+            <summary >
+            To read Motor 2 run status.
+            </summary >
+            <returns > Return false if Motor 2 is stopped or braked. (bool)</returns>
+        </member>
+        <member name="M:ifc.ifc_bh.bh_2_enstat">
+            <summary >
+            To read Encoder 2 stand alone encoding status.
+            </summary >
+            <returns > Return true if Encoder 2 is in progress. (bool)</returns>
+        </member>
+        <member name="M:ifc.ifc_bh.bh_2_spval">
+            <summary >
+            To read Motor 2 speed value.
+            </summary >
+            <returns > Motor 2 speed value in 8-bit. (byte)</returns>
+        </member>
+        <member name="T:ifc.ifc_bh._bh_1_encon">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh._bh_1_encon.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh._bh_1_encon.none(System.Int32)">
+            <summary >
+            No action after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bh._bh_1_encon.stop(System.Int32)">
+            <summary >
+            Motor 1 stop after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bh._bh_1_encon.brake(System.Int32)">
+            <summary >
+            Motor 1 brake after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bh._bh_1_encon.cw(System.Int32,System.Int32)">
+            <summary >
+            Motor 1 change direction to clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_val" > Motor 1 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bh._bh_1_encon.ccw(System.Int32,System.Int32)">
+            <summary >
+            Motor 1 change direction to counter-clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_val" > Motor 1 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bh._bh_1_encon.speed(System.Int32,System.Int32)">
+            <summary >
+            Motor 1 change speed after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_val" > Motor 1 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="T:ifc.ifc_bh._bh_2_encon">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh._bh_2_encon.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bh._bh_2_encon.none(System.Int32)">
+            <summary >
+            No action after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bh._bh_2_encon.stop(System.Int32)">
+            <summary >
+            Motor 2 stop after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bh._bh_2_encon.brake(System.Int32)">
+            <summary >
+            Motor 2 brake after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bh._bh_2_encon.cw(System.Int32,System.Int32)">
+            <summary >
+            Motor 2 change direction to clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_val" > Motor 2 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bh._bh_2_encon.ccw(System.Int32,System.Int32)">
+            <summary >
+            Motor 2 change direction to counter-clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_val" > Motor 2 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bh._bh_2_encon.speed(System.Int32,System.Int32)">
+            <summary >
+            Motor 2 change speed after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_val" > Motor 2 speed after targeted encoder value is reached. (int)</param>
+        </member>
+    </members>
+</doc>

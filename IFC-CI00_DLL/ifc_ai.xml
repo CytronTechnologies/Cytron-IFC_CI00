@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ifc_ai</name>
+    </assembly>
+    <members>
+        <member name="T:ifc.ifc_ai">
+            <summary >
+            Provide access to IFC-AI08.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_ai.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_ai class using the specified ifc.ifc_ci and 
+            address for IFC-AI08.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-AI08, in range of 0 to 63. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_ai.#ctor(ifc.ifc_ci,System.Int32)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_ai class using the specified ifc.ifc_ci and 
+            address for IFC-AI08.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-AI08, in range of 0 to 63. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_ai.ai_bit_conf(System.Int32)">
+            <summary >
+            To configure each ADC channel to either 8 bits or 10 bits mode.
+            </summary >
+            <param name="bit_num" > Every bit represent an ADC channel, bit 0 for AN1, ..., and bit 7 
+            for AN8. Value 0 for the representative bit will set the ADC channel to 8 bit mode, and 
+            value 1 will set the ADC channel to 10 bit mode. (int)</param >
+        </member>
+        <member name="M:ifc.ifc_ai.ai_bit_conf(System.Byte)">
+            <summary >
+            To configure each ADC channel to either 8 bits or 10 bits mode.
+            </summary >
+            <param name="bit_num" > Every bit represent an ADC channel, bit 0 for AN1, ..., and bit 7 
+            for AN8. Value 0 for the representative bit will set the ADC channel to 8 bit mode, and 
+            value 1 will set the ADC channel to 10 bit mode. (byte)</param >
+        </member>
+        <member name="M:ifc.ifc_ai.ai_sampling_conf(System.Byte,System.Byte)">
+            <summary >
+            To configure sampling rate for each ADC channel. All ADC value within the sampling
+            period will be averaged.
+            </summary >
+            <param name="an_sel" > Selected channel to configure, in range of 1 to 8. (byte)</param >
+            <param name="average" > Determine sampling rate of selected ADC channel in range of 1 to 
+            65535. Sampling rate = 10ms x average. (byte)</param >
+        </member>
+        <member name="M:ifc.ifc_ai.ai_sampling_conf(System.Int32,System.Int32)">
+            <summary >
+            To configure sampling rate for each ADC channel. All ADC value within the sampling
+            period will be averaged.
+            </summary >
+            <param name="an_sel" > Selected channel to configure, in range of 1 to 8. (int)</param >
+            <param name="average" > Determine sampling rate of selected ADC channel in range of 1 to 
+            65535. Sampling rate = 10ms x average. (int)</param >
+        </member>
+        <member name="M:ifc.ifc_ai.ai_read(System.Byte)">
+            <summary >
+            To read conversion result of selected ADC channel.
+            </summary >
+            <param name="an_sel" > Selected channel to read, in range of 1 to 8. (byte)</param >
+            <returns > Conversion result of selected ADC channel. (int)</returns>
+        </member>
+        <member name="M:ifc.ifc_ai.ai_read(System.Int32)">
+            <summary >
+            To read conversion result of selected ADC channel.
+            </summary >
+            <param name="an_sel" > Selected channel to read, in range of 1 to 8. (int)</param >
+            <returns > Conversion result of selected ADC channel. (int)</returns>
+        </member>
+        <member name="M:ifc.ifc_ai.ai_cmphl(System.Byte,System.Byte)">
+            <summary >
+            To compare the selected analog channel and figure out which channel has the highest or lowest 
+            conversion result.
+            </summary >
+            <param name="selection" > Every bit represent an ADC channel, bit 0 for AN1, ..., and bit 7 
+            for AN8. Value 1 for the representative bit will determine that the ADC channel is being
+            included in the comparison. (byte)</param >
+            <param name="highest_lowest" > 1 for highest value comparison and 0 for lowest value 
+            comparison. (byte)</param >
+            <returns > Every bit represent an ADC channel, bit 0 for AN1, ..., and bit 7 
+            for AN8. Value 1 determine that the ADC channel has the highest or lowest value, depend on 
+            the type of comparison selected. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ai.ai_cmphl(System.Int32,System.Int32)">
+            <summary >
+            To compare the selected analog channel and figure out which channel has the highest or lowest 
+            conversion result.
+            </summary >
+            <param name="selection" > Every bit represent an ADC channel, bit 0 for AN1, ..., and bit 7 
+            for AN8. Value 1 for the representative bit will determine that the ADC channel is being
+            included in the comparison. (int)</param >
+            <param name="highest_lowest" > 1 for highest value comparison and 0 for lowest value 
+            comparison. (int)</param >
+            <returns > Every bit represent an ADC channel, bit 0 for AN1, ..., and bit 7 
+            for AN8. Value 1 determine that the ADC channel has the highest or lowest value, depend on 
+            the type of comparison selected. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ai.ai_cmphl(System.Byte,System.Boolean)">
+            <summary >
+            To compare the selected analog channel and figure out which channel has the highest or lowest 
+            conversion result.
+            </summary >
+            <param name="selection" > Every bit represent an ADC channel, bit 0 for AN1, ..., and bit 7 
+            for AN8. Value 1 for the representative bit will determine that the ADC channel is being
+            included in the comparison. (byte)</param >
+            <param name="highest_lowest" > True for highest value comparison and false for lowest value 
+            comparison. (bool)</param >
+            <returns > Every bit represent an ADC channel, bit 0 for AN1, ..., and bit 7 
+            for AN8. Value 1 determine that the ADC channel has the highest or lowest value, depend on 
+            the type of comparison selected. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ai.ai_cmphl(System.Int32,System.Boolean)">
+            <summary >
+            To compare the selected analog channel and figure out which channel has the highest or lowest 
+            conversion result.
+            </summary >
+            <param name="selection" > Every bit represent an ADC channel, bit 0 for AN1, ..., and bit 7 
+            for AN8. Value 1 for the representative bit will determine that the ADC channel is being
+            included in the comparison. (int)</param >
+            <param name="highest_lowest" > True for highest value comparison and false for lowest value 
+            comparison. (bool)</param >
+            <returns > Every bit represent an ADC channel, bit 0 for AN1, ..., and bit 7 
+            for AN8. Value 1 determine that the ADC channel has the highest or lowest value, depend on 
+            the type of comparison selected. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ai.ai_cmp2(System.Byte,System.Byte)">
+            <summary >
+            To compare 2 ADC channel conversion result.
+            </summary >
+            <param name="selection1" > First ADC channel to compare, in range of 1 to 8. (byte)</param >
+            <param name="selection2" > Second ADC channel to compare, in range of 1 to 8. (byte)</param >
+            <returns > Return 0 if selection1 = selection2, return 1 if selection1 > selection2, return 2 
+            if selection2 > selection1. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ai.ai_cmp2(System.Int32,System.Int32)">
+            <summary >
+            To compare 2 ADC channel conversion result.
+            </summary >
+            <param name="selection1" > First ADC channel to compare, in range of 1 to 8. (int)</param >
+            <param name="selection2" > Second ADC channel to compare, in range of 1 to 8. (int)</param >
+            <returns > Return 0 if selection1 = selection2, return 1 if selection1 > selection2, return 2 
+            if selection2 > selection1. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ai.ai_vref_read">
+            <summary >
+            To read the adjusted Vref value through programming besides using multimeter. Please 
+            make sure that Vref is being set to ADJ on IFC-AI08.
+            </summary >
+            <returns > Vref 10 bit result. Exact Voltage of Vref can be calculated using 
+            Vref = (result/1023) x 5V. (int)</returns>
+        </member>
+    </members>
+</doc>

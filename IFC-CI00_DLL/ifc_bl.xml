@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ifc_bl</name>
+    </assembly>
+    <members>
+        <member name="T:ifc.ifc_bl">
+            <summary >
+            Provide access to IFC-BL02.
+            </summary >
+        </member>
+        <member name="F:ifc.ifc_bl.bl_1_encon">
+            <summary >
+            To enable stand alone encoding process for BL1.
+            </summary >
+        </member>
+        <member name="F:ifc.ifc_bl.bl_2_encon">
+            <summary >
+            To enable stand alone encoding process for BL2.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_bl class using the specified ifc.ifc_ci and 
+            address for IFC-BL02.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-BL02, in range of 0 to 63. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_bl.#ctor(ifc.ifc_ci,System.Int32)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_bl class using the specified ifc.ifc_ci and 
+            address for IFC-BL02.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-BL02, in range of 0 to 63. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_1_cw">
+            <summary >
+            To change the BL1 direction to clockwise.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_2_cw">
+            <summary >
+            To change the BL2 direction to clockwise.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_1_ccw">
+            <summary >
+            To change the BL1 direction to counter-clockwise.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_2_ccw">
+            <summary >
+            To change the BL2 direction to counter-clockwise.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_1_speed(System.Byte)">
+            <summary >
+            To change the speed of BL1.
+            </summary >
+            <param name="speed" > Speed value of BL1 in range of 0 to 255. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_1_speed(System.Int32)">
+            <summary >
+            To change the speed of BL1.
+            </summary >
+            <param name="speed" > Speed value of BL1 in range of 0 to 255. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_2_speed(System.Byte)">
+            <summary >
+            To change the speed of BL2.
+            </summary >
+            <param name="speed" > Speed value of BL2 in range of 0 to 255. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_2_speed(System.Int32)">
+            <summary >
+            To change the speed of BL2.
+            </summary >
+            <param name="speed" > Speed value of BL2 in range of 0 to 255. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_1_stop">
+            <summary >
+            To stop BL1.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_2_stop">
+            <summary >
+            To stop BL2.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_1_brake">
+            <summary >
+            To brake BL1.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_2_brake">
+            <summary >
+            To brake BL2.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_1_enclr">
+            <summary >
+            To clear BL1 encoder value.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_2_enclr">
+            <summary >
+            To clear BL2 encoder value.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl.bl_1_enval">
+            <summary >
+            To read BL1 encoder value.
+            </summary >
+            <returns > BL1 encoder value in 16-bit. (int)</returns>
+        </member>
+        <member name="M:ifc.ifc_bl.bl_2_enval">
+            <summary >
+            To read BL2 encoder value.
+            </summary >
+            <returns > BL2 encoder value in 16-bit. (int)</returns>
+        </member>
+        <member name="M:ifc.ifc_bl.bl_1_runstat">
+            <summary >
+            To read BL1 run status.
+            </summary >
+            <returns > Return false if BL1 is stopped or braked. (bool)</returns>
+        </member>
+        <member name="M:ifc.ifc_bl.bl_2_runstat">
+            <summary >
+            To read BL2 run status.
+            </summary >
+            <returns > Return false if BL2 is stopped or braked. (bool)</returns>
+        </member>
+        <member name="M:ifc.ifc_bl.bl_1_enstat">
+            <summary >
+            To read BL1 stand alone encoding status.
+            </summary >
+            <returns > Return true if BL1 encoder is in progress. (bool)</returns>
+        </member>
+        <member name="M:ifc.ifc_bl.bl_2_enstat">
+            <summary >
+            To read BL2 stand alone encoding status.
+            </summary >
+            <returns > Return true if BL2 encoder is in progress. (bool)</returns>
+        </member>
+        <member name="M:ifc.ifc_bl.bl_1_spval">
+            <summary >
+            To read BL1 speed value.
+            </summary >
+            <returns > BL1 speed value in 8-bit. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_bl.bl_2_spval">
+            <summary >
+            To read BL2 speed value.
+            </summary >
+            <returns > BL2 speed value in 8-bit. (byte)</returns>
+        </member>
+        <member name="T:ifc.ifc_bl._bl_1_encon">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl._bl_1_encon.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl._bl_1_encon.none(System.Int32)">
+            <summary >
+            No action after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_1_encon.bl1_stop(System.Int32)">
+            <summary >
+            BL1 stop after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_1_encon.bl1_brake(System.Int32)">
+            <summary >
+            BL1 brake after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_1_encon.bl1_cw(System.Int32,System.Int32)">
+            <summary >
+            BL1 change direction to clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_value1" > BL1 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_1_encon.bl1_ccw(System.Int32,System.Int32)">
+            <summary >
+            BL1 change direction to counter-clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_value1" > BL1 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_1_encon.bl1_speed(System.Int32,System.Int32)">
+            <summary >
+            BL1 change speed after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_value1" > BL1 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_1_encon.bl1_bl2_stop(System.Int32)">
+            <summary >
+            BL1 and BL2 stop after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_1_encon.bl1_bl2_brake(System.Int32)">
+            <summary >
+            BL1 and BL2 brake after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_1_encon.bl1_bl2_cw(System.Int32,System.Int32,System.Int32)">
+            <summary >
+            BL1 and BL2 change direction to clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_value1" > BL1 speed after targeted encoder value is reached. (int)</param>
+            <param name="act_value2" > BL2 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_1_encon.bl1_bl2_ccw(System.Int32,System.Int32,System.Int32)">
+            <summary >
+            BL1 and BL2 change direction to counter-clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_value1" > BL1 speed after targeted encoder value is reached. (int)</param>
+            <param name="act_value2" > BL2 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_1_encon.bl1_cw_bl2_ccw(System.Int32,System.Int32,System.Int32)">
+            <summary >
+            BL1 change direction to clockwise and BL2 change direction to counter-clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_value1" > BL1 speed after targeted encoder value is reached. (int)</param>
+            <param name="act_value2" > BL2 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_1_encon.bl1_ccw_bl2_cw(System.Int32,System.Int32,System.Int32)">
+            <summary >
+            BL1 change direction to counter-clockwise and BL2 change direction to clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_value1" > BL1 speed after targeted encoder value is reached. (int)</param>
+            <param name="act_value2" > BL2 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="T:ifc.ifc_bl._bl_2_encon">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl._bl_2_encon.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            For IFC system internal use. User should not call this function.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_bl._bl_2_encon.none(System.Int32)">
+            <summary >
+            No action after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_2_encon.bl2_stop(System.Int32)">
+            <summary >
+            BL2 stop after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_2_encon.bl2_brake(System.Int32)">
+            <summary >
+            BL2 brake after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_2_encon.bl2_cw(System.Int32,System.Int32)">
+            <summary >
+            BL2 change direction to clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_value1" > BL1 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_2_encon.bl2_ccw(System.Int32,System.Int32)">
+            <summary >
+            BL2 change direction to counter-clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_value1" > BL1 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_2_encon.bl2_speed(System.Int32,System.Int32)">
+            <summary >
+            BL2 change speed after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_value1" > BL1 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_2_encon.bl1_bl2_stop(System.Int32)">
+            <summary >
+            BL1 and BL2 stop after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_2_encon.bl1_bl2_brake(System.Int32)">
+            <summary >
+            BL1 and BL2 brake after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_2_encon.bl1_bl2_cw(System.Int32,System.Int32,System.Int32)">
+            <summary >
+            BL1 and BL2 change direction to clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_value1" > BL1 speed after targeted encoder value is reached. (int)</param>
+            <param name="act_value2" > BL2 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_2_encon.bl1_bl2_ccw(System.Int32,System.Int32,System.Int32)">
+            <summary >
+            BL1 and BL2 change direction to counter-clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_value1" > BL1 speed after targeted encoder value is reached. (int)</param>
+            <param name="act_value2" > BL2 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_2_encon.bl1_cw_bl2_ccw(System.Int32,System.Int32,System.Int32)">
+            <summary >
+            BL1 change direction to clockwise and BL2 change direction to counter-clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_value1" > BL1 speed after targeted encoder value is reached. (int)</param>
+            <param name="act_value2" > BL2 speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_bl._bl_2_encon.bl1_ccw_bl2_cw(System.Int32,System.Int32,System.Int32)">
+            <summary >
+            BL1 change direction to counter-clockwise and BL2 change direction to clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_value1" > BL1 speed after targeted encoder value is reached. (int)</param>
+            <param name="act_value2" > BL2 speed after targeted encoder value is reached. (int)</param>
+        </member>
+    </members>
+</doc>

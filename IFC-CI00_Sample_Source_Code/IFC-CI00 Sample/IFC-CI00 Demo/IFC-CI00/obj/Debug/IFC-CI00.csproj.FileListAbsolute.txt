@@ -1,0 +1,18 @@
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00\IFC-CI00\bin\Debug\IFC-CI00.exe
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00\IFC-CI00\bin\Debug\IFC-CI00.pdb
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00\IFC-CI00\bin\Debug\ifc_ci.dll
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00\IFC-CI00\bin\Debug\ifc_ci.xml
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00\IFC-CI00\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00\IFC-CI00\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00\IFC-CI00\obj\Debug\IFC-CI00.csproj.GenerateResource.Cache
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00\IFC-CI00\obj\Debug\IFC-CI00.exe
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00\IFC-CI00\obj\Debug\IFC-CI00.pdb
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo\IFC-CI00\obj\Debug\IFC-CI00.exe
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo\IFC-CI00\obj\Debug\IFC-CI00.pdb
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo\IFC-CI00\bin\Debug\IFC-CI00.exe
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo\IFC-CI00\bin\Debug\IFC-CI00.pdb
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo\IFC-CI00\bin\Debug\ifc_ci.dll
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo\IFC-CI00\bin\Debug\ifc_ci.xml
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo\IFC-CI00\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo\IFC-CI00\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo\IFC-CI00\obj\Debug\IFC-CI00.csproj.GenerateResource.Cache

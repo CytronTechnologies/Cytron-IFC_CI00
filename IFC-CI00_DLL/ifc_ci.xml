@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ifc_ci</name>
+    </assembly>
+    <members>
+        <member name="T:ifc.ifc_ci">
+            <summary >
+            Provide access to IFC system via IFC-CI00.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_ci.#ctor(System.Int32)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_ci class using the specified COM Port.
+            </summary >
+            <param name="ComPort" > The COM Port connected to IFC-CI00. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.#ctor(System.Byte)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_ci class using the specified COM Port.
+            </summary >
+            <param name="ComPort" > The COM Port connected to IFC-CI00. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.write(System.Byte,System.Byte[])">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_ci.read(System.Byte,System.Byte[],System.Byte[]@)">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_led1(System.Byte)">
+            <summary >
+            To control LED 1 on IFC-CI00.
+            </summary >
+            <param name="data" > 1 to ON and 0 to OFF. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_led1(System.Int32)">
+            <summary >
+            To control LED 1 on IFC-CI00.
+            </summary >
+            <param name="data" > 1 to ON and 0 to OFF. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_led1(System.Boolean)">
+            <summary >
+            To control LED 1 on IFC-CI00.
+            </summary >
+            <param name="data" > True to ON and False to OFF. (bool) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_led2(System.Byte)">
+            <summary >
+            To control LED 2 on IFC-CI00.
+            </summary >
+            <param name="data" > 1 to ON and 0 to OFF. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_led2(System.Int32)">
+            <summary >
+            To control LED 2 on IFC-CI00.
+            </summary >
+            <param name="data" > 1 to ON and 0 to OFF. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_led2(System.Boolean)">
+            <summary >
+            To control LED 2 on IFC-CI00.
+            </summary >
+            <param name="data" > True to ON and False to OFF. (bool) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_led3(System.Byte)">
+            <summary >
+            To control LED 3 on IFC-CI00.
+            </summary >
+            <param name="data" > 1 to ON and 0 to OFF. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_led3(System.Int32)">
+            <summary >
+            To control LED 3 on IFC-CI00.
+            </summary >
+            <param name="data" > 1 to ON and 0 to OFF. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_led3(System.Boolean)">
+            <summary >
+            To control LED 3 on IFC-CI00.
+            </summary >
+            <param name="data" > True to ON and False to OFF. (bool) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_led4(System.Byte)">
+            <summary >
+            To control LED 4 on IFC-CI00.
+            </summary >
+            <param name="data" > 1 to ON and 0 to OFF. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_led4(System.Int32)">
+            <summary >
+            To control LED 4 on IFC-CI00.
+            </summary >
+            <param name="data" > 1 to ON and 0 to OFF. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_led4(System.Boolean)">
+            <summary >
+            To control LED 4 on IFC-CI00.
+            </summary >
+            <param name="data" > True to ON and False to OFF. (bool) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_led(System.Int32)">
+            <summary >
+            To control LED 1 to LED 4 on IFC-CI00.
+            </summary >
+            <param name="data" > Bit 0 control LED 1, bit 1 control LED 2, bit 2 control LED 3, 
+            and bit 3 control LED 4. Representative bit set to ON LED, clear to OFF. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_led(System.Byte)">
+            <summary >
+            To control LED 1 to LED 4 on IFC-CI00.
+            </summary >
+            <param name="data" > Bit 0 control LED 1, bit 1 control LED 2, bit 2 control LED 3, 
+            and bit 3 control LED 4. Representative bit set to ON LED, clear to OFF. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_smclr(System.Byte)">
+            <summary >
+            To control Slave Reset of IFC system.
+            </summary >
+            <param name="data" > 1 to reset Slave and 0 to release Slave from reset. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_smclr(System.Int32)">
+            <summary >
+            To control Slave Reset of IFC system.
+            </summary >
+            <param name="data" > 1 to reset Slave and 0 to release Slave from reset. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_smclr(System.Boolean)">
+            <summary >
+            To control Slave Reset of IFC system.
+            </summary >
+            <param name="data" > True to reset Slave and False to release Slave from reset. (bool) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_buzzer(System.Byte)">
+            <summary >
+            To control Buzzer on IFC-CI00.
+            </summary >
+            <param name="data" > 1 to activate Buzzer and 0 to deactivate Buzzer. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_buzzer(System.Int32)">
+            <summary >
+            To control Buzzer on IFC-CI00.
+            </summary >
+            <param name="data" > 1 to activate Buzzer and 0 to deactivate Buzzer. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_buzzer(System.Boolean)">
+            <summary >
+            To control Buzzer on IFC-CI00.
+            </summary >
+            <param name="data" > True to activate Buzzer and False to deactivate Buzzer. (bool) </param >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_iic_speed(System.Int32)">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_ci.ci_iic_speed(System.Byte)">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+    </members>
+</doc>

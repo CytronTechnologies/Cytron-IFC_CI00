@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ifc_cp</name>
+    </assembly>
+    <members>
+        <member name="T:ifc.ifc_cp">
+            <summary >
+            Provide access to IFC-CP04.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_cp.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_cp class using the specified ifc.ifc_ci and 
+            address for IFC-CP04.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="cp" > 1 for CP1 and 2 for CP2. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_cp.#ctor(ifc.ifc_ci,System.Int32)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_cp class using the specified ifc.ifc_ci and 
+            address for IFC-CP04.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="cp" > 1 for CP1 and 2 for CP2. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_cp.cp_char(System.Byte)">
+            <summary >
+            To display a character on LCD.
+            </summary >
+            <param name="data" > Character to be display on LCD, in ASCII format. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_cp.cp_char(System.Char)">
+            <summary >
+            To display a character on LCD.
+            </summary >
+            <param name="data" > Character to be display on LCD, in ASCII format. (char) </param >
+        </member>
+        <member name="M:ifc.ifc_cp.cp_str(System.String)">
+            <summary >
+            To display a string on LCD.
+            </summary >
+            <param name="data" > String to be display on LCD. (string) </param >
+        </member>
+        <member name="M:ifc.ifc_cp.cp_dec(System.Byte,System.Byte)">
+            <summary >
+            To display decimal number on LCD.
+            </summary >
+            <param name="data" > Decimal number to be display on LCD. (byte) </param >
+            <param name="num_dig" > Number of digit to display in range of 1 to 16. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_cp.cp_dec(System.Int32,System.Int32)">
+            <summary >
+            To display decimal number on LCD.
+            </summary >
+            <param name="data" > Decimal number to be display on LCD. (int) </param >
+            <param name="num_dig" > Number of digit to display in range of 1 to 16. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_cp.cp_dec(System.Int64,System.Int64)">
+            <summary >
+            To display decimal number on LCD.
+            </summary >
+            <param name="data" > Decimal number to be display on LCD. (long) </param >
+            <param name="num_dig" > Number of digit to display in range of 1 to 16. (long) </param >
+        </member>
+        <member name="M:ifc.ifc_cp.cp_bin(System.Byte,System.Byte)">
+            <summary >
+            To display binary number on LCD.
+            </summary >
+            <param name="data" > Binary number to be display on LCD. (byte) </param >
+            <param name="num_dig" > Number of bit to display in range of 1 to 16. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_cp.cp_bin(System.Int32,System.Int32)">
+            <summary >
+            To display binary number on LCD.
+            </summary >
+            <param name="data" > Binary number to be display on LCD. (int) </param >
+            <param name="num_dig" > Number of bit to display in range of 1 to 16. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_cp.cp_sw(System.Byte)">
+             <summary >
+             To read push button on IFC-CP04.
+             </summary >
+             <param name="button_number" > Button number to read, in range of 1 to 4. (byte) </param >
+            <returns > True if the button is being pressed, false otherwise. (bool)</returns>
+        </member>
+        <member name="M:ifc.ifc_cp.cp_sw(System.Int32)">
+             <summary >
+             To read push button on IFC-CP04.
+             </summary >
+             <param name="button_number" > Button number to read, in range of 1 to 4. (int) </param >
+            <returns > True if the button is being pressed, false otherwise. (bool)</returns>
+        </member>
+        <member name="M:ifc.ifc_cp.cp_all_sw">
+            <summary >
+            To read all push buttons on IFC-CP04.
+            </summary >
+            <returns > Return all push button status in one byte. Bit 0 represent SW1, bit 1 represent 
+            SW2, bit 2 represent SW3, and bit 3 represend SW4. Representative bit clear the push 
+            button is pressed. (byte)
+            </returns>
+        </member>
+        <member name="M:ifc.ifc_cp.cp_blight(System.Byte)">
+            <summary >
+            To set the brightness of the LCD backlight.
+            </summary >
+            <param name="brightness" > Brightness of the LCD in range of 0 to 255. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_cp.cp_blight(System.Int32)">
+            <summary >
+            To set the brightness of the LCD backlight.
+            </summary >
+            <param name="brightness" > Brightness of the LCD in range of 0 to 255. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_cp.cp_clr">
+            <summary >
+            To clear the LCD and set the cursor back to position 0,0.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_cp.cp_goto(System.Byte,System.Byte)">
+            <summary >
+            To set the cursor of the LCD to a specific location.
+            </summary >
+            <param name="row" > Selected Row of the cursor location, in range of 0 to 1. (byte) </param >
+            <param name="col" > Selected Column of the cursor location, in range of 0 to 15. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_cp.cp_goto(System.Int32,System.Int32)">
+            <summary >
+            To set the cursor of the LCD to a specific location.
+            </summary >
+            <param name="row" > Selected Row of the cursor location, in range of 0 to 1. (int) </param >
+            <param name="col" > Selected Column of the cursor location, in range of 0 to 15. (int) </param >
+        </member>
+    </members>
+</doc>

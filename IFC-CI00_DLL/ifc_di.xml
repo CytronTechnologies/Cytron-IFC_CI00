@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ifc_di</name>
+    </assembly>
+    <members>
+        <member name="T:ifc.ifc_di">
+            <summary >
+            Provide access to IFC-DI08.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_di.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_di class using the specified ifc.ifc_ci and 
+            address for IFC-DI08.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-AI08, in range of 0 to 63. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_di.#ctor(ifc.ifc_ci,System.Int32)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_di class using the specified ifc.ifc_ci and 
+            address for IFC-DI08.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-AI08, in range of 0 to 63. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_di.di_read(System.Byte)">
+            <summary >
+            To read the digital input of a selected port.
+            </summary >
+            <param name="selection" > Selected input port to read, in range of 1 to 8. (byte) </param >
+            <returns > Return the digital input status, true if the digital input status is cleared. 
+            (bool)</returns>
+        </member>
+        <member name="M:ifc.ifc_di.di_read(System.Int32)">
+            <summary >
+            To read the digital input of a selected port.
+            </summary >
+            <param name="selection" > Selected input port to read, in range of 1 to 8. (int) </param >
+            <returns > Return the digital input status, true if the digital input status is cleared. 
+            (bool)</returns>
+        </member>
+        <member name="M:ifc.ifc_di.di_read_all">
+            <summary >
+            To read the all digital input of IFC-DI08.
+            </summary >
+            <returns > Return the digital input status in one byte. Bit 0 represent DI_1, ..., and bit 
+            7 represend DI_8. Representative bit clear if the digital input status is cleared. (byte)
+            </returns>
+        </member>
+        <member name="M:ifc.ifc_di.di_c1con(System.Byte)">
+            <summary >
+            To configure Counter 1 on IFC-DI08.
+            </summary >
+            <param name="on_off" > 1 to turn ON Counter 1 and 0 to turn OFF Counter 1. (byte)
+            </param>
+        </member>
+        <member name="M:ifc.ifc_di.di_c1con(System.Int32)">
+            <summary >
+            To configure Counter 1 on IFC-DI08.
+            </summary >
+            <param name="on_off" > 1 to turn ON Counter 1 and 0 to turn OFF Counter 1. (int)
+            </param>
+        </member>
+        <member name="M:ifc.ifc_di.di_c1con(System.Boolean)">
+            <summary >
+            To configure Counter 1 on IFC-DI08.
+            </summary >
+            <param name="on_off" > True to turn ON Counter 1 and false to turn OFF Counter 1. (bool)
+            </param>
+        </member>
+        <member name="M:ifc.ifc_di.di_c2con(System.Byte)">
+            <summary >
+            To configure Counter 2 on IFC-DI08.
+            </summary >
+            <param name="on_off" > 1 to turn ON Counter 2 and 0 to turn OFF Counter 2. (byte)
+            </param>
+        </member>
+        <member name="M:ifc.ifc_di.di_c2con(System.Int32)">
+            <summary >
+            To configure Counter 2 on IFC-DI08.
+            </summary >
+            <param name="on_off" > 1 to turn ON Counter 2 and 0 to turn OFF Counter 2. (int)
+            </param>
+        </member>
+        <member name="M:ifc.ifc_di.di_c2con(System.Boolean)">
+            <summary >
+            To configure Counter 2 on IFC-DI08.
+            </summary >
+            <param name="on_off" > True to turn ON Counter 2 and false to turn OFF Counter 2. (bool)
+            </param>
+        </member>
+        <member name="M:ifc.ifc_di.di_c1clr">
+            <summary >
+            To clear Counter 1 value.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_di.di_c2clr">
+            <summary >
+            To clear Counter 2 value.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_di.di_c1val">
+            <summary >
+            To read Counter 1 value.
+            </summary >
+            <returns > Counter 1 value in 16-bit. (int)</returns>
+        </member>
+        <member name="M:ifc.ifc_di.di_c2val">
+            <summary >
+            To read Counter 2 value.
+            </summary >
+            <returns > Counter 2 value in 16-bit. (int)</returns>
+        </member>
+    </members>
+</doc>

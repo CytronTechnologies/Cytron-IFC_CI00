@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ifc_md</name>
+    </assembly>
+    <members>
+        <member name="T:ifc.ifc_md">
+            <summary >
+            Provide access to IFC-MD15A
+            </summary >
+        </member>
+        <member name="F:ifc.ifc_md.md_encon">
+            <summary >
+            To enable stand alone encoding process for Encoder.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_md.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_md class using the specified ifc.ifc_ci and 
+            address for IFC-MD15A.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-MD15A, in range of 0 to 63. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_md.#ctor(ifc.ifc_ci,System.Int32)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_bh class using the specified ifc.ifc_ci and 
+            address for IFC-BH02.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-MD15A, in range of 0 to 63. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_md.md_stop">
+            <summary >
+            To stop Motor.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_md.md_brake">
+            <summary >
+            To brake Motor.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_md.md_cw">
+            <summary >
+            To change the Motor direction to clockwise.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_md.md_ccw">
+            <summary >
+            To change the Motor direction to counter-clockwise.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_md.md_speed(System.Byte)">
+            <summary >
+            To change the speed of Motor.
+            </summary >
+            <param name="pwm" > Speed value of Motor in range of 0 to 255. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_md.md_speed(System.Int32)">
+            <summary >
+            To change the speed of Motor.
+            </summary >
+            <param name="pwm" > Speed value of Motor in range of 0 to 255. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_md.md_enclr">
+            <summary >
+            To clear Encoder value.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_md.md_alcon(System.Int32,System.Int32)">
+            <summary >
+            To configure internal alarm of IFC-MD15A.
+            </summary >
+            <param name="autoreset" > 1 to enable autoreset feature and 0 to disable autoreset feature
+            of IFC-MD15A. Autoreset feature is enabled by default. (int) </param >
+            <param name="response" > Response value proportional to the acceleration after autoreset 
+            occur. Default value of response is 820. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_md.md_alcon(System.Boolean,System.Int32)">
+            <summary >
+            To configure internal alarm of IFC-MD15A.
+            </summary >
+            <param name="autoreset" > True to enable autoreset feature and false to disable autoreset 
+            feature of IFC-MD15A. Autoreset feature is enabled by default. (bool) </param >
+            <param name="response" > Response value proportional to the acceleration after autoreset 
+            occur. Default value of response is 820. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_md.md_alrst">
+            <summary >
+            To manually reset the alarm.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_md.md_enval">
+            <summary >
+            To read Encoder value.
+            </summary >
+            <returns > Encoder value in 16-bit. (int)</returns>
+        </member>
+        <member name="M:ifc.ifc_md.md_runstat">
+            <summary >
+            To read Motor run status.
+            </summary >
+            <returns > Return false if Motor is stopped or braked. (bool)</returns>
+        </member>
+        <member name="M:ifc.ifc_md.md_enstat">
+            <summary >
+            To read Encoder stand alone encoding status.
+            </summary >
+            <returns > Return true if Encoder is in progress. (bool)</returns>
+        </member>
+        <member name="M:ifc.ifc_md.md_spval">
+            <summary >
+            To read Motor speed value.
+            </summary >
+            <returns > Motor speed value in 8-bit. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_md.md_alstat">
+            <summary >
+            To get the alarm status of IFC-MD15A.
+            </summary >
+            <returns > True if alarm occured and false otherwise. (bool)</returns>
+        </member>
+        <member name="T:ifc.ifc_md._md_encon">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_md._md_encon.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_md._md_encon.none(System.Int32)">
+            <summary >
+            No action after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_md._md_encon.stop(System.Int32)">
+            <summary >
+            Motor stop after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_md._md_encon.brake(System.Int32)">
+            <summary >
+            Motor brake after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_md._md_encon.cw(System.Int32,System.Int32)">
+            <summary >
+            Motor change direction to clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_val" > Motor speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_md._md_encon.ccw(System.Int32,System.Int32)">
+            <summary >
+            Motor change direction to counter-clockwise after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_val" > Motor speed after targeted encoder value is reached. (int)</param>
+        </member>
+        <member name="M:ifc.ifc_md._md_encon.speed(System.Int32,System.Int32)">
+            <summary >
+            Motor change speed after targeted encoder value is reached.
+            </summary >
+            <param name="enc_data" > Targeted encoder value in range of 0 to 65535. (int)</param>
+            <param name="act_val" > Motor speed after targeted encoder value is reached. (int)</param>
+        </member>
+    </members>
+</doc>

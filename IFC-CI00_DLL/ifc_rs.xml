@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ifc_rs</name>
+    </assembly>
+    <members>
+        <member name="T:ifc.ifc_rs">
+            <summary >
+            Provide access to IFC-RS08
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_rs.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_rs class using the specified ifc.ifc_ci and 
+            address for IFC-RS08.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-PS01, in range of 0 to 63. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_rs.#ctor(ifc.ifc_ci,System.Int32)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_rs class using the specified ifc.ifc_ci and 
+            address for IFC-RS08.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-PS01, in range of 0 to 63. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_rs.rs_pos_sp(System.Int32,System.Int32,System.Int32)">
+            <summary >
+            To determine position and the speed of selected RC servo.
+            </summary >
+            <param name="servo_channel" > RC servo channel in range of 0 to 8. 0 to select all, 1 to select 
+            S1, 2 to select S2, ..., and 8 to select S8. (int)</param >
+            <param name="pos" > RC servo position in range of 0 to 5000, which represend 0.5ms to 
+            2.5ms. (int) </param >
+            <param name="ramp" > Speed of RC servo in range of 1 to 255. 1 is the slowest speed and 
+            255 is the fastest speed. 0 is to select the RC servo default maximum speed. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_rs.rs_read_pos(System.Byte)">
+            <summary >
+            To read the current position of selected RC servo.
+            </summary >
+            <param name="request_servo_channel" > RC servo channel in range of 1 to 8. 1 to select S1, 2 to select
+            S2, ..., and 8 to select S8. (byte)</param >
+            <returns > Return the current value of selected RC servo. (int)</returns>
+        </member>
+        <member name="M:ifc.ifc_rs.rs_read_pos(System.Int32)">
+            <summary >
+            To read the current position of selected RC servo.
+            </summary >
+            <param name="request_servo_channel" > RC servo channel in range of 1 to 8. 1 to select S1, 2 to select
+            S2, ..., and 8 to select S8. (int)</param >
+            <returns > Return the current value of selected RC servo. (int)</returns>
+        </member>
+        <member name="M:ifc.ifc_rs.rs_en(System.Byte,System.Boolean)">
+            <summary >
+            To enable or disable RC servo(s).
+            </summary >
+            <param name="servo_channel" > RC servo channel in range of 0 to 8. 0 to select all, 1 to select 
+            S1, 2 to select S2, ..., and 8 to select S8. (byte)</param >
+            <param name="enable" > True to enable the selected RC servo(s) and false to disable selected
+            RC servo(s). (bool)</param >
+        </member>
+        <member name="M:ifc.ifc_rs.rs_en(System.Int32,System.Boolean)">
+            <summary >
+            To enable or disable RC servo(s).
+            </summary >
+            <param name="servo_channel" > RC servo channel in range of 0 to 8. 0 to select all, 1 to select 
+            S1, 2 to select S2, ..., and 8 to select S8. (int)</param >
+            <param name="enable" > True to enable the selected RC servo(s) and false to disable selected
+            RC servo(s). (bool)</param >
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,24 @@
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\bin\Debug\IFC-CI00 Demo with IFC-CP04.exe
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\bin\Debug\IFC-CI00 Demo with IFC-CP04.pdb
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\bin\Debug\ifc_ci.dll
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\bin\Debug\ifc_cp.dll
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\bin\Debug\ifc_ci.xml
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\bin\Debug\ifc_cp.xml
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\obj\Debug\IFC-CI00 Demo with IFC-CP04.csproj.GenerateResource.Cache
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\obj\Debug\IFC-CI00 Demo with IFC-CP04.exe
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00 Sample\C#\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\obj\Debug\IFC-CI00 Demo with IFC-CP04.pdb
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\obj\Debug\IFC-CI00 Demo with IFC-CP04.exe
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\obj\Debug\IFC-CI00 Demo with IFC-CP04.pdb
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\bin\Debug\IFC-CI00 Demo with IFC-CP04.exe
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\bin\Debug\IFC-CI00 Demo with IFC-CP04.pdb
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\bin\Debug\ifc_ci.dll
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\bin\Debug\ifc_cp.dll
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\bin\Debug\ifc_ci.xml
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\bin\Debug\ifc_cp.xml
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Documents and Settings\Wilson Ling\Desktop\IFC-CI00\IFC-CI00 Sample\IFC-CI00 Demo with IFC-CP04\IFC-CI00 Demo with IFC-CP04\obj\Debug\IFC-CI00 Demo with IFC-CP04.csproj.GenerateResource.Cache

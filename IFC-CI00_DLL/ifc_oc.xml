@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ifc_oc</name>
+    </assembly>
+    <members>
+        <member name="T:ifc.ifc_oc">
+            <summary >
+            Provide access to IFC-OC04
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_oc.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_oc class using the specified ifc.ifc_ci and 
+            address for IFC-OC04.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-OC04, in range of 0 to 63. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.#ctor(ifc.ifc_ci,System.Int32)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_oc class using the specified ifc.ifc_ci and 
+            address for IFC-OC04.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-OC04, in range of 0 to 63. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_out1(System.Byte)">
+            <summary >
+            To configure output condition for OUT1.
+            </summary >
+            <param name="data" > 1 to activate OUT1 and 0 to deactivate OUT1. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_out1(System.Int32)">
+            <summary >
+            To configure output condition for OUT1.
+            </summary >
+            <param name="data" > 1 to activate OUT1 and 0 to deactivate OUT1. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_out1(System.Boolean)">
+            <summary >
+            To configure output condition for OUT1.
+            </summary >
+            <param name="data" > True to activate OUT1 and false to deactivate OUT1. (bool) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_out2(System.Byte)">
+            <summary >
+            To configure output condition for OUT2.
+            </summary >
+            <param name="data" > 1 to activate OUT2 and 0 to deactivate OUT2. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_out2(System.Int32)">
+            <summary >
+            To configure output condition for OUT2.
+            </summary >
+            <param name="data" > 1 to activate OUT2 and 0 to deactivate OUT2. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_out2(System.Boolean)">
+            <summary >
+            To configure output condition for OUT2.
+            </summary >
+            <param name="data" > True to activate OUT2 and false to deactivate OUT2. (bool) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_out3(System.Byte)">
+            <summary >
+            To configure output condition for OUT3.
+            </summary >
+            <param name="data" > 1 to activate OUT3 and 0 to deactivate OUT3. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_out3(System.Int32)">
+            <summary >
+            To configure output condition for OUT3.
+            </summary >
+            <param name="data" > 1 to activate OUT3 and 0 to deactivate OUT3. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_out3(System.Boolean)">
+            <summary >
+            To configure output condition for OUT3.
+            </summary >
+            <param name="data" > True to activate OUT3 and false to deactivate OUT3. (bool) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_out4(System.Byte)">
+            <summary >
+            To configure output condition for OUT4.
+            </summary >
+            <param name="data" > 1 to activate OUT4 and 0 to deactivate OUT4. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_out4(System.Int32)">
+            <summary >
+            To configure output condition for OUT4.
+            </summary >
+            <param name="data" > 1 to activate OUT4 and 0 to deactivate OUT4. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_out4(System.Boolean)">
+            <summary >
+            To configure output condition for OUT4.
+            </summary >
+            <param name="data" > True to activate OUT4 and false to deactivate OUT4. (bool) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_pwm(System.Byte)">
+            <summary >
+            To configure PWM output on OUT1.
+            </summary >
+            <param name="data" > PWM value in range of 0 to 255. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_pwm(System.Int32)">
+            <summary >
+            To configure PWM output on OUT1.
+            </summary >
+            <param name="data" > PWM value in range of 0 to 255. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_out(System.Byte)">
+            <summary >
+            To configure all output.
+            </summary >
+            <param name="data" > Output value in one byte. Bit 0 represent OUT1, bit 1 represend OUT2,
+            bit 2 represent OUT3, and bit 3 represent OUT4. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_oc.oc_out(System.Int32)">
+            <summary >
+            To configure all output.
+            </summary >
+            <param name="data" > Output value in one integer. Bit 0 represent OUT1, bit 1 represend OUT2,
+            bit 2 represent OUT3, and bit 3 represent OUT4. (int) </param >
+        </member>
+    </members>
+</doc>

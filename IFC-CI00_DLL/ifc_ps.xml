@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ifc_ps</name>
+    </assembly>
+    <members>
+        <member name="T:ifc.ifc_ps">
+            <summary >
+            Provide access to IFC-PS01
+            </summary >
+        </member>
+        <member name="F:ifc.ifc_ps.ps_sw">
+            <summary >
+            To read the status of push buttons on PS2 controller.
+            </summary >
+        </member>
+        <member name="F:ifc.ifc_ps.ps_joy">
+            <summary >
+            To read the analog value of joystick on PS2 controller.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_ps.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_ps class using the specified ifc.ifc_ci and 
+            address for IFC-PS01.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-PS01, in range of 0 to 63. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_ps.#ctor(ifc.ifc_ci,System.Int32)">
+            <summary >
+            Initializes a new instance of the ifc.ifc_ps class using the specified ifc.ifc_ci and 
+            address for IFC-PS01.
+            </summary >
+            <param name="ifc_ci" > ifc.ifc_ci in use. </param >
+            <param name="address" > Address for IFC-PS01, in range of 0 to 63. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_ps.ps_vibrate(System.Byte,System.Boolean)">
+            <summary >
+            To control the vibrator motors on PS2 controller.
+            </summary >
+            <param name="motor" > Vibrator motors on PS2 controller in range of 1 to 2. (byte) </param >
+            <param name="vibrate" > True to turn ON and false to turn OFF the selected vibrator motor. (bool) </param >
+        </member>
+        <member name="M:ifc.ifc_ps.ps_vibrate(System.Byte,System.Byte)">
+            <summary >
+            To control the vibrator motors on PS2 controller.
+            </summary >
+            <param name="motor" > Vibrator motors on PS2 controller in range of 1 to 2. (byte) </param >
+            <param name="vibrate" > For Motor 1, the valid value for vibrate is 1 to turn ON and 0 
+            to turn OFF. For Motor 2, the valid value will be in range of 0 to 255 which represent
+            the percentage of the vibration. (byte) </param >
+        </member>
+        <member name="M:ifc.ifc_ps.ps_vibrate(System.Int32,System.Boolean)">
+            <summary >
+            To control the vibrator motors on PS2 controller.
+            </summary >
+            <param name="motor" > Vibrator motors on PS2 controller in range of 1 to 2. (int) </param >
+            <param name="vibrate" > True to turn ON and false to turn OFF the selected vibrator motor. (bool) </param >
+        </member>
+        <member name="M:ifc.ifc_ps.ps_vibrate(System.Int32,System.Int32)">
+            <summary >
+            To control the vibrator motors on PS2 controller.
+            </summary >
+            <param name="motor" > Vibrator motors on PS2 controller in range of 1 to 2. (int) </param >
+            <param name="vibrate" > For Motor 1, the valid value for vibrate is 1 to turn ON and 0 
+            to turn OFF. For Motor 2, the valid value will be in range of 0 to 255 which represent
+            the percentage of the vibration. (int) </param >
+        </member>
+        <member name="M:ifc.ifc_ps.ps_stat">
+            <summary >
+            To check the connectivity of PS2 controller to IFC-PS01
+            </summary >
+            <returns > Return true if PS2 controller is connected to IFC-PS01. (bool)</returns>
+        </member>
+        <member name="T:ifc.ifc_ps._ps_sw">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.select">
+            <summary >
+            Select button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.joyl">
+            <summary >
+            Joystick Left button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.joyr">
+            <summary >
+            Joystick Right button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.start">
+            <summary >
+            Start button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.up">
+            <summary >
+            Up button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.right">
+            <summary >
+            Right button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.down">
+            <summary >
+            Down button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.left">
+            <summary >
+            Left button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.l2">
+            <summary >
+            L2 button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.r2">
+            <summary >
+            R2 button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.l1">
+            <summary >
+            L1 button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.r1">
+            <summary >
+            R1 button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.triangle">
+            <summary >
+            Triangle button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.circle">
+            <summary >
+            Circle button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.cross">
+            <summary >
+            Cross button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_sw.square">
+            <summary >
+            Square button on PS2 controller.
+            </summary >
+            <returns > Return true if the button is pressed. (bool) </returns>
+        </member>
+        <member name="T:ifc.ifc_ps._ps_joy">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_ps._ps_joy.#ctor(ifc.ifc_ci,System.Byte)">
+            <summary >
+            For IFC system internal use.
+            </summary >
+        </member>
+        <member name="M:ifc.ifc_ps._ps_joy.joy_lx">
+            <summary >
+            Left joystick in x-axis.
+            </summary >
+            <returns > Return the joystick information in x-axis. The value is 
+            around 128 when the joystick is at center, 0 when the joystick is at left side,
+            and 255 when the joystick is at the right side. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_joy.joy_ly">
+            <summary >
+            Left joystick in y-axis.
+            </summary >
+            <returns > Return the joystick information in y-axis. The value is 
+            around 128 when the joystick is at center, 0 when the joystick is at upper side,
+            and 255 when the joystick is at the lower side. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_joy.joy_rx">
+            <summary >
+            Right joystick in x-axis.
+            </summary >
+            <returns > Return the joystick information in x-axis. The value is 
+            around 128 when the joystick is at center, 0 when the joystick is at left side,
+            and 255 when the joystick is at the right side. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_joy.joy_ry">
+            <summary >
+            Right joystick in y-axis.
+            </summary >
+            <returns > Return the joystick information in y-axis. The value is 
+            around 128 when the joystick is at center, 0 when the joystick is at upper side,
+            and 255 when the joystick is at the lower side. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_joy.joy_lu">
+            <summary >
+            Left joystick in up direction.
+            </summary >
+            <returns > Return the joystick information in up direction. The value is 
+            0 when the joystick is at center or lower, and the value change to 100 when the joystick
+            is being moved up. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_joy.joy_ld">
+            <summary >
+            Left joystick in down direction.
+            </summary >
+            <returns > Return the joystick information in down direction. The value is 
+            0 when the joystick is at center or upper, and the value change to 100 when the joystick
+            is being moved down. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_joy.joy_ll">
+            <summary >
+            Left joystick in left direction.
+            </summary >
+            <returns > Return the joystick information in left direction. The value is 
+            0 when the joystick is at center or right, and the value change to 100 when the joystick
+            is being moved to left. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_joy.joy_lr">
+            <summary >
+            Left joystick in right direction.
+            </summary >
+            <returns > Return the joystick information in right direction. The value is 
+            0 when the joystick is at center or left, and the value change to 100 when the joystick
+            is being moved to right. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_joy.joy_ru">
+            <summary >
+            Right joystick in up direction.
+            </summary >
+            <returns > Return the joystick information in up direction. The value is 
+            0 when the joystick is at center or lower, and the value change to 100 when the joystick
+            is being moved up. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_joy.joy_rd">
+            <summary >
+            Right joystick in down direction.
+            </summary >
+            <returns > Return the joystick information in down direction. The value is 
+            0 when the joystick is at center or upper, and the value change to 100 when the joystick
+            is being moved down. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_joy.joy_rl">
+            <summary >
+            Right joystick in left direction.
+            </summary >
+            <returns > Return the joystick information in left direction. The value is 
+            0 when the joystick is at center or right, and the value change to 100 when the joystick
+            is being moved to left. (byte)</returns>
+        </member>
+        <member name="M:ifc.ifc_ps._ps_joy.joy_rr">
+            <summary >
+            Right joystick in right direction.
+            </summary >
+            <returns > Return the joystick information in right direction. The value is 
+            0 when the joystick is at center or left, and the value change to 100 when the joystick
+            is being moved to right. (byte)</returns>
+        </member>
+    </members>
+</doc>
